@@ -1,0 +1,52 @@
+@import '@styles/theme.module.scss';
+.root {
+    background-color: $golden-gate-bridge;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-weight: bold;
+    position: fixed;
+}
+.mainContainer {
+    position: relative;
+    top: 20vh;
+    width: 100%;
+}
+.mainHeader {
+    text-align: center;
+    color: $white;
+}
+h1 {
+    font-size: 5vw;
+}
+.input {
+    padding-top: 4vh;
+}
+label{
+    padding-right: 2vh;
+}
+input{
+    background-color: #FFFFFF; 
+    color: $black;
+    font-weight: normal;
+    padding-right: 25vw;
+    transform: scaleY(1.2);
+    border-radius: 8px;
+    text-align: justify;
+}
+.loginbutton{
+    padding-top: 5vh;
+}
+button{
+    background-color: #395CF9;
+    border-radius: 5px;
+    height: 7.5vh;
+    width: 9vw;
+    font: $large-font;
+    transition: opacity 0.3s ease;
+    opacity: 0.95;
+}
+button:hover{
+    background-color: #0000FF;
+    opacity: 1;
+}
