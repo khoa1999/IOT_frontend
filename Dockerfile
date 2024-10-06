@@ -35,5 +35,5 @@ COPY nginx.conf /etc/nginx/nginx.conf
 EXPOSE 8080
 
 # Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["/bin/sh", "-c", "envsubst '$$PORT' < /etc/nginx/nginx.conf > /etc/nginx/nginx.conf && exec nginx -g 'daemon off;'"]
 
