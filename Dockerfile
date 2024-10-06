@@ -38,7 +38,7 @@ EXPOSE 8080
 #CMD ["/bin/sh", "-c", "envsubst '$$PORT' < /etc/nginx/nginx.conf > /etc/nginx/nginx.conf && exec nginx -g 'daemon off;'"]
 
 # Set the PORT environment variable for Google Cloud Run
-ENV PORT 8080
+#ENV PORT 8080
 
 # Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
