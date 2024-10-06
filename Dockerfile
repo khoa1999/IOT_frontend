@@ -31,8 +31,12 @@ COPY --from=build /app/dist /usr/share/nginx/html
 # Copy custom Nginx configuration
 COPY nginx.conf /etc/nginx/nginx.conf
 
-# Expose port 80
+# Expose port 8080
 EXPOSE 8080
 
+# Set the PORT environment variable for Google Cloud Run
+ENV PORT 8080
+
 # Start Nginx
-CMD ["/bin/sh", "-c", "envsubst '$$P
+CMD ["/bin/sh", "-c", "envsubst '$$PORT' < /etc/nginx/nginx.conf > /etc/nginx/nginx.conf && exec nginx -g 'daemon off;'"]
+
