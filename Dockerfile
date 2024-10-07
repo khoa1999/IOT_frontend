@@ -16,9 +16,6 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-# Production stage
-FROM nginx:alpine
-
 # Stage 2: Serve the React app with Nginx
 FROM nginx:alpine
 
