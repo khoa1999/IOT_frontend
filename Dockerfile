@@ -2,7 +2,7 @@
 FROM node:18-alpine AS build
 
 #Set working directory
-WORKDIR /app
+WORKDIR /workspace
 
 # Install dependencies
 COPY package.json package-lock.json ./
@@ -23,7 +23,7 @@ FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy the build output from the previous stage to Nginx's web directory
-COPY --from=build /app/dist /usr/share/nginx/html
+COPY --from=build /workspace/dist /usr/share/nginx/html
 
 # Copy custom Nginx configuration
 COPY nginx.conf /etc/nginx/nginx.conf
