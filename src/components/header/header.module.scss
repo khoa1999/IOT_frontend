@@ -19,9 +19,10 @@
     display: flex;
     column-gap: 2rem;
     font: $button-font;
+}
+NavLink{
     color: $snow-white;
 }
-
 .active {
     color: $white;
     font-weight: 600;
