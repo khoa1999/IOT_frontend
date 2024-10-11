@@ -24,7 +24,7 @@ export const Login = ({ className }: LoginProps) => {
                     </div>
                     <div className={classNames(styles.input, className)}>
                         <label htmlFor="email">Password:</label>
-                        <input id="password" name="password"/>
+                        <input id="password" name="password" type="password"/>
                     </div>
                     <div className={classNames(styles.loginbutton, className)}>
                         <button>{'Log in'}</button>

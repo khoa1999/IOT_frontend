@@ -19,7 +19,7 @@ export const Header = ({ className }: HeaderProps) => {
             <div className={styles.menu}>
                 <NavLink
                     to="/"
-                    className={({ isActive }) => classNames({ [styles.active]: isActive })}
+                    className={({ isActive }) => classNames({ [styles.active]: isActive ,[styles.inactive]: !isActive})}})}
                 >
                     Home
                 </NavLink>
@@ -29,6 +29,12 @@ export const Header = ({ className }: HeaderProps) => {
                     [styles.inactive]: !isActive})}
                 >
                     About
+                </NavLink>
+                <NavLink
+                    to="/login"
+                    className={({ isActive }) => classNames({ [styles.active]: isActive ,[styles.inactive]: !isActive})}})}
+                >
+                    Login
                 </NavLink>
             </div>
         </div>
