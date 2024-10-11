@@ -1,7 +1,7 @@
 @import '@styles/theme.module.scss';
 .root {
     background-color: $golden-gate-bridge;
-    display: flex;
+    display: fixed; //flex
     width: 100vw;
     height: 100vh;
     font-weight: bold;

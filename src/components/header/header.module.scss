@@ -9,7 +9,7 @@
     align-items: center;
     height: 4em;
     font: $button-font;
-
+    background-color: $golden-gate-bridge;
     @media only screen and (max-width: $mobile-width) {
         padding: 0 3em
     }
@@ -22,6 +22,6 @@
 }
 
 .active {
-    color: $black;
+    color: $white;
     font-weight: 600;
 }
