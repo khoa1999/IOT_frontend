@@ -19,14 +19,13 @@ export const Header = ({ className }: HeaderProps) => {
             <div className={styles.menu}>
                 <NavLink
                     to="/"
-                    className={({ isActive }) => classNames({ [styles.active]: isActive ,[styles.inactive]: !isActive})}}
+                    className={({ isActive }) => classNames({ [styles.active]: isActive ,[styles.inactive]: !isActive})}
                 >
                     Home
                 </NavLink>
                 <NavLink
                     to="/about"
-                    className={({ isActive }) => classNames({ [styles.active]: isActive ,
-                    [styles.inactive]: !isActive})}
+                    className={({ isActive }) => classNames({ [styles.active]: isActive ,[styles.inactive]: !isActive})}
                 >
                     About
                 </NavLink>

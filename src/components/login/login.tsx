@@ -31,6 +31,4 @@ export const Login = ({ className }: LoginProps) => {
                     </div>
                 </div>
             </div>
-        </div>
-    );
-};
+        <
