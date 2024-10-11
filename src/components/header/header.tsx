@@ -25,7 +25,8 @@ export const Header = ({ className }: HeaderProps) => {
                 </NavLink>
                 <NavLink
                     to="/about"
-                    className={({ isActive }) => classNames({ [styles.active]: isActive })}
+                    className={({ isActive }) => classNames({ [styles.active]: isActive ,
+                    [styles.inactive]: !isActive})}
                 >
                     About
                 </NavLink>
